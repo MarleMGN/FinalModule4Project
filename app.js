@@ -37,7 +37,7 @@ async function fetchAllMovies() {
 
 async function fetchMovie(movieId) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=d5b623ef`);
+        const response = await fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=d5b623ef`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
